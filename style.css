@@ -1,0 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif; 
+    background-color: #16161d;
+    color:white;
+}

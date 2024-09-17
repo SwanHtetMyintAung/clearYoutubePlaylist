@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tadah</title>
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: "arial", Times, serif; 
+            background-color: #16161d;
+            color:white;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 8vh auto;
+            width:100%;
+            max-width: 700px;
+            height: 78vh;
+            border:solid 2px white;
+        }
+        .container > #title{
+            text-align: center;
+            text-wrap:wrap;
+            font-weight: bolder;
+        }
+        .container > a {
+            text-decoration: none;
+            color:white;
+            display: block; 
+            text-align: center;
+            cursor: pointer;
+            margin: 5vh 0;
+        }
+        .container >form{
+            width:90%;
+            min-width: 300px;
+            height: 5vh;
+            display: flex;
+            margin-bottom: 10vh;
+        }
+        .container > form > input{
+            border-radius:20px 0 0 20px;
+            flex-grow: 2;
+        }
+        .container > form > button{
+            border:none;
+            border-left:solid 1px inherit;
+            border-radius: 0 20px 20px 0;
+            width: 20%;
+        }
+        .container > span {
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Clear Your YouTube PlayList</h1>
+        <a role="button" href="/getAuthUrl">Click ME TO Sign in</a>
+        <form action="/playlist/clear" method="POST">
+            <input type="text" name="url" id="url" placeholder="Paste The Url Of The PlayList You Want To Delete!">
+            <button>DELETE</button>
+        </form>
+        <span>Brought</span>
+        <span>To</span>
+        <span>You</span>
+        <span>By</span>
+        <span>A</span>
+        <span>GoofBall</span>
+    </div>
+</body>
+</html>
